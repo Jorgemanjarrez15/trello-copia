@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+:root{
+  --fuente-titulo:"Asap Condensed";
+  --fuente-texto: "Roboto";
+  --color-texto:  #99a3a4 ;
+  --color-texto-mod-dark:  #cacfd2;
+  --background-main:  #5f6a6a;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.encabezado{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #85929e;
+  position: sticky;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-family: var(--fuente-texto);
+}
+.menu nav, ul{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.crear-tablero{
+  padding: .6rem;
+  background-color: blue;
+  color: #cacfd2;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+li{
+  list-style: none;
+  padding: .5rem;
+  border-radius: 8px;
+}
+li:hover{
+  background-color: #cacfd2;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.menu h1{
+  font-family: var(--fuente-titulo);
+}
+.encabezado .icon{
+  cursor: pointer;
+}
+
+
+/* principal */
+.principal{
+  width: 100%;
+  height: 88.9vh;
+  background-color: var(--background-main);
+  font-family: var(--fuente-texto);
+  display: flex;
+}
+.menu-lateral{
+  border-top: 1px solid var(--color-texto);
+  width: 25%;
+  height: 100%;
+  background-color: #85929e;
+  padding: 10px;
+  display: none;
+}
+.barra-lateral{
+  width: 20px;
+  height: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nombre-seccion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cerrar{
+  cursor: pointer;
+  padding: .4rem;
+  border-radius: 50%;
+}
+.cerrar:hover{
+  background-color: #5f6a6a;
+}
+.barra-lateral:hover{
+  background-color: #85929e;
+}
+.mostrar{
+  display: block;
+  transition: all ease;
+}
+.container-listas{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.lista{
+  width: 270px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: .5rem;
+  background-color: #99a3a4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.lista:hover{
+  background-color: #707b7c;
+}
+.nombre-lista{
+  border: none;
+  padding: .5rem;
+  display: block;
+}
