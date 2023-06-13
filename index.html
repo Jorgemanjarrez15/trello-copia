@@ -9,39 +9,25 @@
 </head>
 <body>
   <header class="encabezado">
-    <div class="menu">
+    <div class="encabezado-titulo">
       <h1>T4sk</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Espacio de trabajo</a>
-          </li>
-          <li>
-            <a href="#">Reciente</a>
-          </li>
-        </ul>
-        <button class="crear-tablero">Crear tablero</button>
-      </nav>
     </div>
-    <i class="fa-sharp fa-solid fa-circle-half-stroke icon"></i>
+    <div class="encabezado-icon">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
   </header>
-  <main class="principal">
-    <div class="barra-lateral">
-      <i class="fa-solid fa-arrow-right-from-bracket icon-menu"></i>
-    </div>
-    <aside class="menu-lateral">
-      <div class="nombre-seccion">
-        <p>Herramientas</p>
-        <i class="fa-sharp fa-solid fa-arrow-left cerrar"></i>
+  <main class="principal-container">
+    <aside class="tableros">
+      <div class="tablero-add">
+        <i class="fa-solid fa-plus"></i>
+        <p>Añadir tablero</p>
       </div>
-      <hr>
     </aside>
-    <section class="container-listas">
-      <div class="lista">
-        <i class="fa-solid fa-plus add"></i>
-        <p class="mensaje">Añadir estado de tarea</p>
+    <section class="listas">
+      <div class="lista-add no-mostrar">
+        <i class="fa-solid fa-plus"></i>
+        <p>Añadir lista</p>
       </div>
-
     </section>
   </main>
   <script src="main.js"></script>
